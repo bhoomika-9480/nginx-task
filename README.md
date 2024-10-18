@@ -114,3 +114,19 @@ http {
     }
 }
 
+Once the Docker Compose setup is running, you can access the services using the following URLs:
+
+Server A: http://localhost/a
+Server B: http://localhost/b
+Server C: http://localhost/c
+
+## Benifits of reverse proxy 
+
+ Path-based Routing: The reverse proxy allows for path-based routing, enabling multiple services to be accessed through a single entry point (the reverse proxy), improving organization and resource management.
+
+Load Balancing: While this setup is for static content, a reverse proxy can be configured to load balance between multiple instances of a service if needed.
+
+Security: By hiding the backend services, the reverse proxy can enhance security. It can also be configured to handle SSL termination, protecting internal services from direct exposure to the internet.
+
+Centralized Configuration: Managing routing rules and configurations in a single place simplifies deployment and maintenance.
+
